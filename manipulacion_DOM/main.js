@@ -42,6 +42,28 @@ console.log(h1.getAttribute("pantalla"));
 console.log(h1.getAttribute("class"));
 
 // .setAttribute modifica los atributos del elemento
-h1.setAttribute("class", "rojo");
+//h1.setAttribute("class", "rojo");
 
-// Continuar clase "Escribiendo HTML desde JavaScript" minuto 7:00
+// .classList.add agrega clases a elementos de HTML
+h1.classList.add("rojo");
+
+// .classList.remove quita clases a elementos de HTML
+h1.classList.remove("rojo");
+
+// h1.classList.toggle("verde");
+// h1.classList.contains("verde");
+
+// modificar atributos de HTML desde javascript
+input.value = "456";
+
+// crear elemeto desde cero en HTML
+const img = document.createElement("img");
+img.setAttribute("src", "https://i.pinimg.com/736x/fb/20/0a/fb200abb57c1fb9ddbd68229ae918e7d.jpg");
+
+// se borra lo que tiene parrafo pid con cadena de texto vacia ""
+pid.innerHTML = "";
+
+// .append y .appendChild agregan el elemento luego de lo que ya hay 
+pid.append(img);
+
+console.log(img);
